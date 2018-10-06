@@ -2,6 +2,8 @@ const _ = require('lodash');
 const fs = require('fs');
 const moment = require('moment');
 const errors = require('./exchangeErrors');
+const util = require('../core/util');
+const config = util.getConfig();
 
 const Checker = function() {
   _.bindAll(this);
